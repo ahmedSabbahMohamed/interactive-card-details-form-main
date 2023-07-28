@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card-front {
+    top: 20%;
+    left: 20%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card-back {
+    bottom: 20%;
+    left: 40%;
+}
+
+.d-lg-none {
+    width: 100%;
+    height: auto;
+}
+
+.front-absolute .logo {
+    top: 10%;
+    left: 5%;
+}
+
+.front-absolute h1 {
+    top: 50%;
+    left: 5%;
+}
+
+.front-absolute p {
+    bottom: 10%;
+    left: 5%;
+}
+
+.front-absolute span {
+    bottom: 10%;
+    right: 5%;
+}
+
+.card-back p {
+    top: 45%;
+    right: 11%;
+}
+
+form,.thank {
+    max-width: 375px !important;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+button {
+    background-color: hsl(278, 68%, 11%) !important;
+    padding: 12px !important;
+}
+
+@media (max-width: 790px) {
+    .front,.back {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-back,.card-front {
+        width: 70%;
+    }
+
+    .card-front {
+        left: 45%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-back {
+        left: 58%;
+        top: 37%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 520px) {
+    .card-front {
+        left: 42%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-back p {
+        top: 41%;
+    }
+
+    .front-absolute h1 {
+        font-size: larger;
+    }    
 }

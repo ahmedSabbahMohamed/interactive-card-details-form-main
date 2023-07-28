@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Aside from "./components/Aside"
+import Form from "./components/Form"
+import Thank from "./components/Thank"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <main className="row row-cols-lg-2 justify-content-center align-items-center m-0">
+        <Aside />
+        <div>
+          <div className="get-data">
+            <Form />
+          </div>
+          <div className="success d-none">
+            <Thank />
+          </div>
+        </div>
+    </main>
+    </>
+  )
 }
 
-export default App;
+export default App
